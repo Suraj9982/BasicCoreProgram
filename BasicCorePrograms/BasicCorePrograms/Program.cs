@@ -9,7 +9,7 @@ namespace BasicCorePrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("CHOOSE ONE OPTION TO RUN THE PROGRAM\n1.FlipCoin\n2.LeapYear\n3.PowerOfTwo\n4.HarmonicNumbers\n5.Exit");
+                Console.WriteLine("CHOOSE ONE OPTION TO RUN THE PROGRAM\n1.FlipCoin\n2.LeapYear\n3.PowerOfTwo\n4.HarmonicNumbers\n5.Factors\n6.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -30,10 +30,14 @@ namespace BasicCorePrograms
                         harmonic.PrintHarmonicnumbers();
                         break;
                     case 5:
+                        Factors fact = new Factors();
+                        fact.PrimeFactornumber();
+                        break;
+                    case 6:
                         flag = false;
                         break;
                     default:
-                        Console.WriteLine("your choice should be between 1 to 5");
+                        Console.WriteLine("your choice should be between 1 to 6");
                         break;
                 }
             }
