@@ -9,7 +9,7 @@ namespace BasicCorePrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("CHOOSE ONE OPTION TO RUN THE PROGRAM\n1.FlipCoin\n2.LeapYear\n3.Exit");
+                Console.WriteLine("CHOOSE ONE OPTION TO RUN THE PROGRAM\n1.FlipCoin\n2.LeapYear\n3.PowerOfTwo\n4.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -22,10 +22,14 @@ namespace BasicCorePrograms
                         leap.FindleapYear();
                         break;
                     case 3:
+                        PowerOfTwo power = new PowerOfTwo();
+                        power.Findpoweroftwo();
+                        break;
+                    case 4:
                         flag = false;
                         break;
                     default:
-                        Console.WriteLine("your choice should be between 1 to 3");
+                        Console.WriteLine("your choice should be between 1 to 4");
                         break;
                 }
             }
