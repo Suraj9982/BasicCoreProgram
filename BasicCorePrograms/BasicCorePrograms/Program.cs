@@ -9,7 +9,7 @@ namespace BasicCorePrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("CHOOSE ONE OPTION TO RUN THE PROGRAM\n1.FlipCoin\n2.Exit");
+                Console.WriteLine("CHOOSE ONE OPTION TO RUN THE PROGRAM\n1.FlipCoin\n2.LeapYear\n3.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -18,10 +18,14 @@ namespace BasicCorePrograms
                         flip.Flipthecoin();
                         break;
                     case 2:
+                        LeapYear leap = new LeapYear();
+                        leap.FindleapYear();
+                        break;
+                    case 3:
                         flag = false;
                         break;
                     default:
-                        Console.WriteLine("your choice should be between 1 to 2");
+                        Console.WriteLine("your choice should be between 1 to 3");
                         break;
                 }
             }
