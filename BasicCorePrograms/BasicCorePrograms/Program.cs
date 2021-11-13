@@ -9,7 +9,7 @@ namespace BasicCorePrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("CHOOSE ONE OPTION TO RUN THE PROGRAM\n1.FlipCoin\n2.LeapYear\n3.PowerOfTwo\n4.HarmonicNumbers\n5.Factors\n6.QuoteintREmainder\n7.SwapNumbers\n8.EvenOdd\n9.VowelsConsonant\n10.Exit");
+                Console.WriteLine("CHOOSE ONE OPTION TO RUN THE PROGRAM\n1.FlipCoin\n2.LeapYear\n3.PowerOfTwo\n4.HarmonicNumbers\n5.Factors\n6.QuoteintREmainder\n7.SwapNumbers\n8.EvenOdd\n9.VowelsConsonant\n10.LargestNumber\n11.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -50,10 +50,14 @@ namespace BasicCorePrograms
                         letter.CheckVowelsConsonant();
                         break;
                     case 10:
+                        LargestNumber max = new LargestNumber();
+                        max.Maximumnumber();
+                        break;
+                    case 11:
                         flag = false;
                         break;
                     default:
-                        Console.WriteLine("your choice should be between 1 to 10");
+                        Console.WriteLine("your choice should be between 1 to 11");
                         break;
                 }
             }
