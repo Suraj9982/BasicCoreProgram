@@ -9,7 +9,7 @@ namespace BasicCorePrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("CHOOSE ONE OPTION TO RUN THE PROGRAM\n1.FlipCoin\n2.LeapYear\n3.PowerOfTwo\n4.HarmonicNumbers\n5.Factors\n6.QuoteintREmainder\n7.Exit");
+                Console.WriteLine("CHOOSE ONE OPTION TO RUN THE PROGRAM\n1.FlipCoin\n2.LeapYear\n3.PowerOfTwo\n4.HarmonicNumbers\n5.Factors\n6.QuoteintREmainder\n7.SwapNumbers\n8.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -38,10 +38,14 @@ namespace BasicCorePrograms
                         number.FindQuoteintRemainder();
                         break;
                     case 7:
+                        SwapNumbers swap = new SwapNumbers();
+                        swap.Swapingnumbes();
+                        break;
+                    case 8:
                         flag = false;
                         break;
                     default:
-                        Console.WriteLine("your choice should be between 1 to 7");
+                        Console.WriteLine("your choice should be between 1 to 8");
                         break;
                 }
             }
