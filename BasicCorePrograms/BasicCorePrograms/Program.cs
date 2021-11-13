@@ -9,7 +9,7 @@ namespace BasicCorePrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("CHOOSE ONE OPTION TO RUN THE PROGRAM\n1.FlipCoin\n2.LeapYear\n3.PowerOfTwo\n4.Exit");
+                Console.WriteLine("CHOOSE ONE OPTION TO RUN THE PROGRAM\n1.FlipCoin\n2.LeapYear\n3.PowerOfTwo\n4.HarmonicNumbers\n5.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -26,10 +26,14 @@ namespace BasicCorePrograms
                         power.Findpoweroftwo();
                         break;
                     case 4:
+                        HarmonicNumbers harmonic = new HarmonicNumbers();
+                        harmonic.PrintHarmonicnumbers();
+                        break;
+                    case 5:
                         flag = false;
                         break;
                     default:
-                        Console.WriteLine("your choice should be between 1 to 4");
+                        Console.WriteLine("your choice should be between 1 to 5");
                         break;
                 }
             }
